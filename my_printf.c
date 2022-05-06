@@ -446,36 +446,7 @@ int my_printf(char* restrict format, ...)
 	return i;
 } // What a mess. At least, it works. However, it looks like shit. I picked up my 6-month-old code after all. I hadn't planned to do it this way at all. I had to rush. Sometimes, you've got to do it quick 'n' dirty.
 
-int main() //( int c_a, char* v_a[] )
-{
-			 char* a = "";
-	  signed  int  d = -2147483647; //-2147483648; //=  INT_MIN;
-	unsigned  int  o =  4294967295; //= UINT_MAX; //=  INT_MAX * 2 - 1;
-	unsigned  int  u =  4294967295; //=  INT_MAX * 2 - 1;
-	unsigned  int  x =  4294967295; //=  INT_MAX * 2 - 1;
-			 char  c = 'c';
-			 char* s = "string";
-	//char* a = v_a[0];
-			 void* p = &a; //void* p = (void*) &main(); //&v_a[0]; //&a;
-
-	printf("%d\n",	printf("   PRINTF:\td:\t%d\n", d));
-	printf("%d\n", my_printf("My PRINTF:\td:\t%d\n", d));
-	printf("%d\n",	printf("   PRINTF:\to:\t%o\n", o));
-	printf("%d\n", my_printf("My PRINTF:\to:\t%o\n", o));
-	printf("%d\n",	printf("   PRINTF:\tu:\t%u\n", u));
-	printf("%d\n", my_printf("My PRINTF:\tu:\t%u\n", u));
-	printf("%d\n",	printf("   PRINTF:\tx:\t%x\n", x));
-	printf("%d\n", my_printf("My PRINTF:\tx:\t%x\n", x));
-	printf("%d\n",	printf("   PRINTF:\tc:\t%c\n", c));
-	printf("%d\n", my_printf("My PRINTF:\tc:\t%c\n", c));
-	printf("%d\n",	printf("   PRINTF:\ts:\t%s\n", s));
-	printf("%d\n", my_printf("My PRINTF:\ts:\t%s\n", s));
-	printf("%d\n",	printf("   PRINTF:\tp:\t%p\n", p));
-	printf("%d\n", my_printf("My PRINTF:\tp:\t%p\n", p));
-	printf("%d\n",	printf("%s\n", (char*) NULL));
-	printf("%d\n", my_printf("%s\n", (char*) NULL));
-	return 0;
-} //	debug code
+ //	debug code
 
 /*//	my_printf.c
 ////	My PRINTF

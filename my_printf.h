@@ -29,7 +29,6 @@
 #ifndef MY_PRINTF_H
 # define MY_PRINTF_H
 
-# include "../lib/libc/include/libc.h"
 # include <stdarg.h> // va_start, va_arg, va_copy, va_end
 # include <stddef.h> // size_t
 # include <string.h> // strlen, memcpy, strcat //	unused code
